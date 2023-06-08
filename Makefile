@@ -69,7 +69,7 @@ linux:
 	fi
 
 	@rm -rf $(PLATFORMTOOLS_FOLDER)
-	@cd /tmp && unzip -u $(PLATFORMTOOLS_LINUX)
+	@cd /tmp && unzip $(PLATFORMTOOLS_LINUX)
 	@cp $(PLATFORMTOOLS_FOLDER)/adb $(ASSETS_FOLDER)
 
 	@echo "[builder] Building Linux binary for amd64"
